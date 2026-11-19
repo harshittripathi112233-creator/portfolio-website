@@ -1,4 +1,4 @@
-// 1. Dark / light mode toggle (remembers your choice)
+
 const root = document.documentElement;
 const themeBtn = document.getElementById('themeBtn');
 
@@ -16,8 +16,6 @@ themeBtn.addEventListener('click', () => {
   applyTheme(next);
   try { localStorage.setItem('theme', next); } catch (e) {}
 });
-
-// 2. Mobile menu + smooth scrolling (smooth scroll is set in CSS) + active link highlight
 const nav = document.getElementById('nav');
 const menuBtn = document.getElementById('menuBtn');
 
@@ -43,8 +41,6 @@ function highlightLink() {
 }
 window.addEventListener('scroll', highlightLink, { passive: true });
 highlightLink();
-
-// 3. Skill bars animate when they scroll into view
 const fills = document.querySelectorAll('.fill');
 if ('IntersectionObserver' in window) {
   const observer = new IntersectionObserver((entries) => {
@@ -59,8 +55,6 @@ if ('IntersectionObserver' in window) {
 } else {
   fills.forEach((f) => (f.style.width = f.dataset.w + '%'));
 }
-
-// 4. Contact form validation (no backend needed)
 const form = document.getElementById('form');
 const statusBox = document.getElementById('status');
 
@@ -97,6 +91,4 @@ form.addEventListener('submit', (e) => {
   statusBox.textContent = 'Thanks, ' + document.getElementById('name').value.trim() + '. Your message was sent.';
   form.reset();
 });
-
-// Footer year
 document.getElementById('yr').textContent = new Date().getFullYear();
