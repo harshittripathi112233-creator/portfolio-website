@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harshit Tripathi – Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="study.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="bar">
+    <a class="logo" href="#home"><span class="logo-mark">H</span>Harshit<span class="accent">Tripathi</span></a>
+    <nav id="nav" aria-label="Main">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="actions">
+      <button id="themeBtn" class="icon-btn" type="button" aria-label="Switch to light mode">☀</button>
+      <a class="btn small" href="#contact">Hire Me</a>
+      <button id="menuBtn" class="icon-btn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <p class="kicker">Welcome to my world</p>
+      <h1>Hi, I’m <span class="accent">Harshit Tripathi</span><br>a Web Developer.</h1>
+      <p class="lead">I’m a first-year Computer Science student. I build clean, responsive websites and I’m looking for a web development internship.</p>
+      <div class="hero-meta">
+        <div>
+          <p class="kicker">Find with me</p>
+          <div class="chips">
+            <a class="chip" href="#" aria-label="GitHub">GH</a>
+            <a class="chip" href="#" aria-label="LinkedIn">in</a>
+            <a class="chip" href="#" aria-label="Instagram">IG</a>
+          </div>
+        </div>
+        <div>
+          <p class="kicker">Best skill on</p>
+          <div class="chips">
+            <span class="chip">JS</span><span class="chip">CSS</span><span class="chip">Py</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <figure class="photo">
+     
+      <img src="Screenshot 2026-11-19 213039.png" alt="Harshit Tripathi" />
+    </figure>
+  </section>
+  <section id="about" class="split">
+    <figure class="photo small-photo"> 
+      <img src="Screenshot 2026-11-19 213039.png" alt="Harshit Tripathi" />
+    </figure>
+    <div>
+      <h2>Who I Am?</h2>
+      <p>I’m a computer science student from Delhi with a strong interest in front-end development. I like learning by building, and I enjoy turning ideas into pages that are simple to use.</p>
+      <dl class="facts">
+        <dt>Name</dt><dd>Harshit Tripathi</dd>
+        <dt>Location</dt><dd>Delhi, India</dd>
+        <dt>Languages</dt><dd>English, Hindi</dd>
+        <dt>Degree</dt><dd>B.Tech, Computer Science (1st year)</dd>
+        <dt>Interests</dt><dd>Open source, chess, photography</dd>
+      </dl>
+      <a class="btn" href="#" id="cvBtn">Download PDF</a>
+    </div>
+  </section>
+  <section id="education">
+    <h2>Education</h2>
+    <div class="timeline">
+      <div class="item"><h3>B.Tech in Computer Science</h3><span>University Name, Delhi · 2023 – 2027</span><p>Data structures, algorithms, DBMS, operating systems and web technologies.</p></div>
+      <div class="item"><h3>Senior Secondary (Class XII)</h3><span>School Name, Delhi · 2021 – 2023</span><p>Science stream with Computer Science. Scored 94%.</p></div>
+      <div class="item"><h3>Secondary (Class X)</h3><span>School Name, Delhi · 2021</span><p>Scored 95%.</p></div>
+    </div>
+  </section>
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="grid two">
+      <div class="card"><h3>Technical</h3>
+        <div class="skill"><div><span>HTML &amp; CSS</span><span>90%</span></div><div class="track"><div class="fill" data-w="90"></div></div></div>
+        <div class="skill"><div><span>JavaScript</span><span>80%</span></div><div class="track"><div class="fill" data-w="80"></div></div></div>
+        <div class="skill"><div><span>Python</span><span>75%</span></div><div class="track"><div class="fill" data-w="75"></div></div></div>
+        <div class="skill"><div><span>SQL &amp; Git</span><span>70%</span></div><div class="track"><div class="fill" data-w="70"></div></div></div>
+      </div>
+      <div class="card"><h3>Non-technical</h3>
+        <div class="skill"><div><span>Communication</span><span>85%</span></div><div class="track"><div class="fill" data-w="85"></div></div></div>
+        <div class="skill"><div><span>Teamwork</span><span>90%</span></div><div class="track"><div class="fill" data-w="90"></div></div></div>
+        <div class="skill"><div><span>Problem solving</span><span>85%</span></div><div class="track"><div class="fill" data-w="85"></div></div></div>
+        <div class="skill"><div><span>Time management</span><span>80%</span></div><div class="track"><div class="fill" data-w="80"></div></div></div>
+      </div>
+    </div>
+  </section>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid three">
+      <article class="card project"><div class="thumb">Notes</div><h3>Campus Notes Exchange</h3><p>Students upload and search class notes by subject and semester.</p><p class="tags"><span>Python</span><span>Flask</span><span>SQL</span></p><a href="#">View on GitHub</a></article>
+      <article class="card project"><div class="thumb">Budget</div><h3>Expense Tracker</h3><p>A budget tool with category charts that works offline in the browser.</p><p class="tags"><span>JavaScript</span><span>Chart.js</span></p><a href="#">View on GitHub</a></article>
+      <article class="card project"><div class="thumb">Library</div><h3>Library Management System</h3><p>A console app to issue and return books, with fines and reports.</p><p class="tags"><span>Java</span><span>OOP</span></p><a href="#">View on GitHub</a></article>
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Contact me now</h2>
+    <form id="form" novalidate>
+      <div class="field"><label for="name">Your name</label><input id="name" autocomplete="name"><div class="err" id="e-name"></div></div>
+      <div class="field"><label for="email">Your email</label><input id="email" type="email" autocomplete="email"><div class="err" id="e-email"></div></div>
+      <div class="field wide"><label for="msg">Your message</label><textarea id="msg" rows="5"></textarea><div class="err" id="e-msg"></div></div>
+      <div class="wide"><button class="btn" type="submit">Submit now</button> <span id="status" role="status"></span></div>
+    </form>
+    <div class="grid three contact-info">
+      <div class="card"><h3>Phone</h3><p>+91 98765 43210</p></div>
+      <div class="card"><h3>Location</h3><p>Delhi, India</p></div>
+      <div class="card"><h3>Email</h3><p>harshit@example.com</p></div>
+    </div>
+  </section>
+</main>
+
+<footer>© <span id="yr"></span> Harshit Tripathi. Built with HTML, CSS and JavaScript.</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
