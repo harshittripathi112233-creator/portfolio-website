@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-A responsive personal portfolio website built for my third-year Computer Science web development project.
+A responsive personal portfolio website built for my first-year Computer Science web development project.
 
 ## Technologies Used
 * **HTML5:** Semantic structure and layout
